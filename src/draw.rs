@@ -29,6 +29,6 @@ pub fn draw(status: Stats, size: i32) -> std::string::String {
         result+="|";
         result += &(i.percent.to_string().to_owned() + "%");
     }
-    result += "\n```";
+    result += "\n```\n";
     result
 }
