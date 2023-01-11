@@ -1,4 +1,4 @@
-use std::{env, fs, io};
+use std::{env, fs};
 
 use draw::draw;
 use waka_apis::waka_api;

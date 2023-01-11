@@ -12,7 +12,7 @@ pub fn draw(status: Stats, size: i32) -> std::string::String {
         }
     });
     println!("{}", max_len);
-    result+="📊 Weekly development breakdown";
+    result+="📊 Weekly development breakdown\n```text";
     for i in languages {
         result += "\n";
         result += &i.name;
@@ -29,5 +29,6 @@ pub fn draw(status: Stats, size: i32) -> std::string::String {
         result+="|";
         result += &(i.percent.to_string().to_owned() + "%");
     }
+    result += "```";
     result
 }
