@@ -12,7 +12,7 @@ pub fn draw(status: Stats, size: i32) -> std::string::String {
         }
     });
     println!("{}", max_len);
-    
+    result+="📊 Weekly development breakdown";
     for i in languages {
         result += "\n";
         result += &i.name;
