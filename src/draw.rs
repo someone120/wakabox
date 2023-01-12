@@ -12,7 +12,7 @@ pub fn draw(status: Stats, size: i32) -> std::string::String {
         }
     });
     println!("{}", max_len);
-    result+="<a>📊 Weekly development breakdown</a>\n```text\n";
+    result+=r#"\n#### <a href="https://github.com/someone120/someone120" target="_blank">📊 Weekly development breakdown</a>\n```text\n"#;
     for i in languages {
         result += "\n";
         result += &i.name;
