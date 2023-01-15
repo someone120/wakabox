@@ -29,8 +29,7 @@ pub fn draw(status: Stats, size: i32) -> std::string::String {
         for _ in 0..(size - ((i.percent / 100.0) * size as f64) as i32) {
             result += " ";
         }
-        result+="|";
-        result += &(i.percent.to_string().to_owned() + "%");
+        result +=&format!("|{} {}%",i.text,i.percent);
     }
     result += "\n```\n";
     result
