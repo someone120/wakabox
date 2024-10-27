@@ -2,12 +2,12 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct BestDay {
-  pub created_at: String,
-  pub date: String,
-  pub id: String,
-  pub modified_at: String,
-  pub text: String,
-  pub total_seconds: f64,
+  // pub created_at: String,
+  // pub date: String,
+  // // pub id: String,
+  // pub modified_at: String,
+  // pub text: String,
+  // pub total_seconds: f64,
 }
 
 #[derive(Serialize, Deserialize)]
